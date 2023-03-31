@@ -10,7 +10,7 @@
 
 void print_buffer(char *b, int size)
 {
-int o, j, i;;
+into, j, i;;
 
 			o = 0;
 
@@ -46,4 +46,4 @@ printf("%c", c);
 printf("\n");
 o += 10;		
 }
-{
+}
