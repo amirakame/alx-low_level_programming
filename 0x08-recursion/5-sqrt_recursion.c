@@ -5,7 +5,7 @@
     * @n: the number to find the square root of
      * @i: the integer to check as a possible root
       *
-* Return: the natural square root of the number, or -1 if no natural square root exists
+* Return: the resulting square root
 */
 int _sqrt_check(int n, int i)
 {
@@ -27,7 +27,7 @@ return (_sqrt_check(n, i + 1));
    * _sqrt_recursion - returns the natural square root of a number
     * @n: the number to find the square root of
      *
-* Return: the natural square root of the number, or -1 if no natural square root exists
+* Return: the resulting square root
        */
 int _sqrt_recursion(int n)
 {
