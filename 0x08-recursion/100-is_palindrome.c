@@ -1,25 +1,42 @@
-#include <string.h>
+#include "main.h"
+#include <stdio.h>
 
-int _strlen_recursion(char *s);
 /**
-   * is_palindrome - checks if a string is a palindrom
-    * @s: string to reverse
+   * is_palindrome - checks if a string is a palindrome
+    * @s: the string to check
      *
-      * Return: 1 if it is, 0 it's not
-*/
+      * Return: 1 if s is a palindrome, 0 otherwise
+       */
 int is_palindrome(char *s)
 {
-int left = 0;
-int right = strlen(s) - 1;
+	    int len = strlen(s);
 
-while (left < right)
-{
-if (s[left] != s[right])
-{
+/* base case: empty string or single-character string */
+if (len <= 1)
+return (1);
+		/* recursive case: check first and last characters */
+if (s[0] == s[len - 1])
+return (is_palindrome(s + 1) && is_palindrome(s, len - 2));
+else
 return (0);
 }
-left++;
-right--;
-}
-return (1);
+
+/**
+   * main - tests the is_palindrome function
+    *
+     * Return: always 0
+      */
+int main(void)
+{
+	    int r;
+
+r = is_palindrome("level");
+		    printf("%d\n", r);
+r = is_palindrome("redder");
+			    printf("%d\n", r);
+r = is_palindrome("test");
+				    printf("%d\n", r);
+r = is_palindrome("step on no pets");
+					    printf("%d\n", r);
+return (0);
 }
