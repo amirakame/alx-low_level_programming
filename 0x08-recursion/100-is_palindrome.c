@@ -1,14 +1,15 @@
 #include <string.h>
 
-int is_palindrome(char *s)
+int _strlen_recursion(char *s);
 /**
-   *  checks if a string is a palindrome
+   * is_palindrome - checks if a string is a palindrom
     * @s: string to reverse
      *
       * Return: 1 if it is, 0 it's not
 */
+int is_palindrome(char *s)
 {
-	    int left = 0;
+int left = 0;
 int right = strlen(s) - 1;
 
 while (left < right)
