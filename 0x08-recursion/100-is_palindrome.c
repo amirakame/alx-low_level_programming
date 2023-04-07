@@ -1,5 +1,7 @@
 #include "main.h"
 
+int check_palindrome(char *s, int start, int end);
+
 /**
  * is_palindrome - checks if a string is a palindrome
  * @s: string to check
@@ -13,13 +15,15 @@ int is_palindrome(char *s)
 	while (*s != '\0')
 	{
 		len++;
+		s++;
 	}
 
 	if (len <= 1)
 	{
 		return (1);
 	}
-		return check_palindrome(s, 0, len - 1);
+	
+	return check_palindrome(s - len, 0, len - 1);
 }
 
 /**
