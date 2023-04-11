@@ -7,7 +7,7 @@
      * @size: the size of the array to be created
       * @c: the character to initialize the array with
        *
-        * Return: On success - pointer to the array created.
+* Return: On success - pointer to the array created.
 	 *         On failure - NULL.
 	  */
 
@@ -20,7 +20,7 @@ if (size == 0 || arr == NULL)
 return (NULL);
 
 for (i = 0; i < size; i++)
-								arr[i] = c;
+arr[i] = c;
 
 return (arr);
 }
