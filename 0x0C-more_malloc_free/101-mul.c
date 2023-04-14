@@ -75,6 +75,7 @@ return (ln);
 
 /**
    * main - Entry point.
+     * @brief The main function
     * program that multiplies two positive numbers.
      * @argc: number of arguments.
       * @argv: arguments vector.
