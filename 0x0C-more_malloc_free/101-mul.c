@@ -77,7 +77,7 @@ return (ln);
    * main - Entry point.
     * program that multiplies two positive numbers.
      * @argc: number of arguments.
-      * @argv: array of arguments.
+      * @argv: arguments vector.
        *
 * always 0 (Success).
 	 */
