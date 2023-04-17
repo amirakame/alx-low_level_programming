@@ -1,13 +1,12 @@
 #include <stdio.h>
-#define FILENAME "main.c"
 
 /**
-   * main - prints the name of the file
+   * main - prints file name.
     *
      * Return: Always 0 (Success)
-      */
+ */
 int main(void)
 {
-		printf("The name of the current file is: %s\n", FILENAME);
+printf("%s\n", __FILE__);
 return (0);
 }
