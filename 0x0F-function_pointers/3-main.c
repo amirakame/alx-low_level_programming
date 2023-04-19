@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include "3-calc.h"
 /**
-   * main - Prints the result
-    * @argc: The number of arguments.
+   * main - Prints the Product of simple operations.
+    * @argc: The number of arguments Given to the program.
      * @argv: An array of pointers to the arguments.
       *
        * Return: Always 0.
@@ -20,7 +20,7 @@ exit(98);
 }
 num1 = atoi(argv[1]);
 op = argv[2];
-sum2 = atoi(argv[3]);
+num2 = atoi(argv[3]);
 if (get_op_func(op) == NULL || op[1] != '\0')
 {
 printf("Error\n");
