@@ -11,4 +11,4 @@ push format ; push format string onto the stack
 call printf ; call printf with the format string on the stack
 
 add rsp, 8 ; remove arguments from the stack
-ret ; return from function
+ret ; db `Hello, Holberton\n`,0
