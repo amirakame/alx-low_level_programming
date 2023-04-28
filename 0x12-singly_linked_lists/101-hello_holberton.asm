@@ -2,13 +2,15 @@ global main
 extern printf
 
 section .data
-format db 'Hello, Holberton%s', 10, 0 ; format string for printf, with newline character and null byte
+msg db "Hello, Holberton", 10
 
 section .text
 main:
-xor eax, eax ; clear rax
-push format ; push format string onto the stack
-call printf ; call printf with the format string on the stack
-
-add rsp, 8 ; remove arguments from the stack
-ret ; db `Hello, Holberton\n`,0
+mov     rax, 1           ; system call for write
+mov     rdi, 1           ; file handle 1 is stdout
+mov     rsi, msg         ; address of string to output
+mov     rdx, 13          ; number of bytes
+syscall                   ; invoke operating system to do the write
+mov     rax, 60          ; system call for exit
+xor     rdi, rdi        ; exit code 0
+syscall                   ; invoke operating system to exit
