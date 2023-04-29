@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * print_listint_safe - Prints listint_t safe.
  * @head: Pointer to the head of the list.
