@@ -3,6 +3,8 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 	NAME = school
 
+	.PHONY: all
+
 	all: $(NAME)
 
 	$(NAME): $(OBJ)
